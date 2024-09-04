@@ -24,12 +24,12 @@ client.riffy = new Riffy(client, config.nodes, {
     restVersion: "v4",
 });
 
-// Memuat semua command dan aliasnya
+// Load all commands and aliases
 fs.readdirSync("./commands").forEach(file => {
     const command = require(`./commands/${file}`);
     client.commands.set(command.name, command);
 
-    // Memetakan alias ke command yang sesuai
+    // Aliases
     if (command.aliases && command.aliases.length) {
         command.aliases.forEach(alias => {
             client.commands.set(alias, command);
@@ -40,7 +40,12 @@ fs.readdirSync("./commands").forEach(file => {
 client.on("ready", () => {
     client.riffy.init(client.user.id);
     console.log(`Logged in as ${client.user.tag}`);
+
+    // Set bot status and activity
+    client.user.setActivity('music', { type: 'LISTENING' });
+    // Options: 'PLAYING', 'WATCHING', 'COMPETING'
 });
+
 
 client.on("messageCreate", async (message) => {
     if (!message.content.startsWith(config.prefix) || message.author.bot) return;
