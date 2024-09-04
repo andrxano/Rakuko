@@ -8,9 +8,8 @@
 <h1 align="center">Features</h1>
 
 <ul>
-  <li>Music commands</li>
-  <li>With <a href="https://github.com/unburn/musicard">Musicard</a> integrated</li>
-  <li>and <a href="https://github.com/riffy-team/riffy">Riffy</a></li>
+  <li>Music commands with <a href="https://github.com/riffy-team/riffy">Riffy</a> and <a href="https://github.com/unburn/musicard">Musicard</a> integrated</li>
+  <li>Utility commands</li>
 </ul>
 
 ## Installation
