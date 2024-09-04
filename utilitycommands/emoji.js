@@ -1,5 +1,6 @@
 module.exports = {
     name: 'emoji',
+    aliases: ["e", "em"],
     description: 'Send an emoji from another server',
     async execute(client, message, args) {
         // Args format: :emoji_name: or emoji_id
