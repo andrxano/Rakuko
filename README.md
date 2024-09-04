@@ -1,4 +1,4 @@
-<img src="https://cdn.discordapp.com/attachments/1276771043347922954/1280714077953331305/Rakuko_Banner.png?ex=66d9156e&is=66d7c3ee&hm=eeff527bb101ae32a18b06af462b7fca07ab2ccca3714d28b707ee3ab1642c74&" />
+<img align="center" src="https://cdn.discordapp.com/attachments/1276771043347922954/1280714077953331305/Rakuko_Banner.png?ex=66d9156e&is=66d7c3ee&hm=eeff527bb101ae32a18b06af462b7fca07ab2ccca3714d28b707ee3ab1642c74&" />
 
 <p align="center">Rakuko is a Discord Music Bot with basic commands and stuff. This is a personal Music bot project for Discord that I make for my private servers on Discord. I'm using Riffy and Musicard for this bot.</p>
 
