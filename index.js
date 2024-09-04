@@ -84,13 +84,18 @@ client.riffy.on("trackStart", async (player, track) => {
     }
 });
 
-client.riffy.on("queueEnd", async (player) => {
-    const command = client.commands.get('queueend');
-    if (command) {
-        try {
-            await command.execute(client, player);
-        } catch (error) {
-            console.error(error);
+client.riffy.on('queueEnd', async (player) => {
+    const channel = client.channels.cache.get(player.textChannel);
+
+    // Set this to true if you want to enable autoplay.
+    const autoplay = false;
+
+    if (autoplay) {
+        player.autoplay(player);
+    } else {
+        player.destroy();
+        if (channel) {
+            channel.send('Queue has ended.');
         }
     }
 });
