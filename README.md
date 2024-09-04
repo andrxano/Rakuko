@@ -11,7 +11,7 @@
 ## Features
 - Music commands
 - With [Musicard](https://github.com/unburn/musicard) integrated.
-- Riffy [Riffy](https://github.com/riffy-team/riffy)
+- and [Riffy](https://github.com/riffy-team/riffy)
 
 ## Installation
 **1. Clone the repository**
