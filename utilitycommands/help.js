@@ -23,7 +23,8 @@ module.exports = {
                 { name: '-nowplaying', value: 'Shows the currently playing track.' },
                 { name: '-avatar or -av', value: 'Displays the avatar of a mentioned user or yourself.' },
                 { name: '-ping', value: 'Shows the bot\'s latency.' },
-                { name: '-emoji or -em or -e', value: 'Send custom emojis from other servers' }
+                { name: '-emoji or -em or -e', value: 'Send custom emojis from other servers' },
+                { name: '-listemojis', value: 'Send list of emojis from server' }
             )
             .setFooter({ text: 'Use the commands with the prefix you have set.' });
 
