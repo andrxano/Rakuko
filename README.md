@@ -4,14 +4,14 @@
 </div>
 <p>
 
-<p align="center">
-    <a href="https://github.com/andrxano/Rakuko/"><b>Github</b></a>
-</p>
 
-## Features
-- Music commands
-- With [Musicard](https://github.com/unburn/musicard) integrated.
-- and [Riffy](https://github.com/riffy-team/riffy)
+<h1 align="center">Features</h1>
+
+<ul>
+  <li>Music commands</li>
+  <li>With <a href="https://github.com/unburn/musicard">Musicard</a> integrated</li>
+  <li>and <a href="https://github.com/riffy-team/riffy">Riffy</a></li>
+</ul>
 
 ## Installation
 **1. Clone the repository**
