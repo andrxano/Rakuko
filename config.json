@@ -1,0 +1,13 @@
+{
+    "token": "YOUR_BOT_TOKEN",
+    "prefix": "!",
+    "nodes": [
+      {
+        "host": "LAVALINK_HOST",
+        "password": "LAVALINK_PASSWORD",
+        "port": 2333,
+        "secure": false
+      }
+    ]
+  }
+  
