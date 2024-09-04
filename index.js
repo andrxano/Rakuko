@@ -78,14 +78,6 @@ client.on("messageCreate", async (message) => {
             message.reply("There was an error executing that command.");
         }
     }
-
-    const commandsRequiringVoiceChannel = ["play", "p", "pause", "resume", "seek", "remove", "queue", "skip", "shuffle", "stop", "nowplaying", "np"];
-    if (commandsRequiringVoiceChannel.includes(command)) {
-        const voiceChannel = message.member.voice.channel;
-        if (!voiceChannel) {
-            return message.reply("You need to be in a voice channel to use this command!");
-        }
-    }
 });
 
 client.riffy.on("nodeConnect", (node) => {
