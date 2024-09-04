@@ -8,17 +8,10 @@
     <a href="https://github.com/andrxano/Rakuko/"><b>Github</b></a>
 </p>
 
-<div align="center">
-
-![NPM Version](https://img.shields.io/npm/v/discord.js?label=discord.js&style=flat-square&color=%2300E9B1)
-![NPM Version](https://img.shields.io/npm/v/riffy?label=riffy&style=flat-square&color=%2300E9B1)
-![GitHub Repo stars](https://img.shields.io/github/stars/andrxano/Rakuko?style=flat-square&color=%2300E9B1)
-
-</div>
-
 ## Features
 - Music commands
 - With [Musicard](https://github.com/unburn/musicard) integrated.
+- Riffy [Riffy](https://github.com/riffy-team/riffy)
 
 ## Installation
 **1. Clone the repository**
