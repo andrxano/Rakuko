@@ -1,4 +1,4 @@
-const { Client, GatewayDispatchEvents, Collection } = require("discord.js");
+const { Client, GatewayDispatchEvents, Collection, ActivityType } = require("discord.js");
 const { Riffy } = require("riffy");
 const fs = require("fs");
 const config = require("./config.json");
@@ -25,8 +25,8 @@ client.riffy = new Riffy(client, config.nodes, {
 });
 
 // Load all commands and aliases
-fs.readdirSync("./commands").forEach(file => {
-    const command = require(`./commands/${file}`);
+fs.readdirSync("./musiccommands").forEach(file => {
+    const command = require(`./musiccommands/${file}`);
     client.commands.set(command.name, command);
 
     // Aliases
@@ -37,15 +37,30 @@ fs.readdirSync("./commands").forEach(file => {
     }
 });
 
+fs.readdirSync("./utilitycommands").forEach(file => {
+    if (file.endsWith(".js")) {
+        const command = require(`./utilitycommands/${file}`);
+        client.commands.set(command.name, command);
+
+        if (command.aliases && command.aliases.length) {
+            command.aliases.forEach(alias => {
+                client.commands.set(alias, command);
+            });
+        }
+    }
+});
+
 client.on("ready", () => {
     client.riffy.init(client.user.id);
     console.log(`Logged in as ${client.user.tag}`);
 
     // Set bot status and activity
-    client.user.setActivity('music', { type: 'LISTENING' });
+    client.user.setPresence({
+        activities: [{ name: `Music`, type: ActivityType.Listening }],
+        status: 'online',
+      });
     // Options: 'PLAYING', 'WATCHING', 'COMPETING'
 });
-
 
 client.on("messageCreate", async (message) => {
     if (!message.content.startsWith(config.prefix) || message.author.bot) return;
