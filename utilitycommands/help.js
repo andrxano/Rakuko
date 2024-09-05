@@ -11,7 +11,7 @@ module.exports = {
             .setColor('#f7931e')
             .setImage('https://cdn.discordapp.com/attachments/1046080161168232610/1280925141231993003/lv_0_20240904231526.gif?ex=66d9da00&is=66d88880&hm=b6620f465ae8594cf9114cb858a51d9adfb260656e0f17fcd85c48ac0d94fdb3&')
             .setFooter({
-                text: 'Rakuko',
+                text: 'Requested by ' + message.author.tag,
                 iconURL: 'https://cdn.discordapp.com/attachments/1276771043347922954/1281064958997823581/Rakuko_Logo.png?ex=66da5c37&is=66d90ab7&hm=eb4d814a013bf83eb0771fbdd1e3a33df870ebc946c5894b8b3cec6a16923ec8&' // URL of the GIF
             });
 
