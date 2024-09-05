@@ -85,8 +85,8 @@ module.exports = {
             },
             timeoutTime: 60000,
             sentence: randomSentence, // Use the random sentence
-            winMessage: 'You won! You finished the type race in **{time} seconds** with wpm of **{wpm}**.',
-            loseMessage: 'You lost! You didn\'t type the correct sentence in time.',
+            winMessage: ':tada: You won! You finished the type race in **{time} seconds** with wpm of **{wpm}**.',
+            loseMessage: ':stuck_out_tongue_closed_eyes: You lost! You didn\'t type the correct sentence in time.',
         });
 
         Game.startGame();
