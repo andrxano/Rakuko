@@ -47,7 +47,7 @@ function loadCommandsFromFolders(client, folders) {
 const commandFolders = ['./musiccommands', './utilitycommands', './funcommands'];
 loadCommandsFromFolders(client, commandFolders);
 
-client.on("ready", () => {
+client.once("ready", () => {
     client.riffy.init(client.user.id);
     console.log(`Logged in as ${client.user.tag}`);
 
