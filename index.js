@@ -1,5 +1,6 @@
 const { Client, GatewayDispatchEvents, Collection, ActivityType } = require("discord.js");
 const { Riffy } = require("riffy");
+const path = require('path');
 const fs = require("fs");
 const config = require("./config.json");
 
@@ -25,30 +26,26 @@ client.riffy = new Riffy(client, config.nodes, {
 });
 
 // Load all commands and aliases
-fs.readdirSync("./musiccommands").forEach(file => {
-    const command = require(`./musiccommands/${file}`);
-    client.commands.set(command.name, command);
+function loadCommandsFromFolders(client, folders) {
+    folders.forEach(folder => {
+        const commandPath = path.join(__dirname, folder);
+        fs.readdirSync(commandPath).forEach(file => {
+            if (file.endsWith('.js')) {
+                const command = require(`${commandPath}/${file}`);
+                client.commands.set(command.name, command);
 
-    // Aliases
-    if (command.aliases && command.aliases.length) {
-        command.aliases.forEach(alias => {
-            client.commands.set(alias, command);
+                // Aliases support
+                if (command.aliases && command.aliases.length) {
+                    command.aliases.forEach(alias => {
+                        client.commands.set(alias, command);
+                    });
+                }
+            }
         });
-    }
-});
-
-fs.readdirSync("./utilitycommands").forEach(file => {
-    if (file.endsWith(".js")) {
-        const command = require(`./utilitycommands/${file}`);
-        client.commands.set(command.name, command);
-
-        if (command.aliases && command.aliases.length) {
-            command.aliases.forEach(alias => {
-                client.commands.set(alias, command);
-            });
-        }
-    }
-});
+    });
+}
+const commandFolders = ['./musiccommands', './utilitycommands', './funcommands'];
+loadCommandsFromFolders(client, commandFolders);
 
 client.on("ready", () => {
     client.riffy.init(client.user.id);
@@ -56,8 +53,8 @@ client.on("ready", () => {
 
     // Set bot status and activity
     client.user.setPresence({
-        activities: [{ name: `Music`, type: ActivityType.Listening }],
-        status: 'online',
+        activities: [{ name: `Experiment Bot`, type: ActivityType.Custom }],
+        status: 'dnd',
       });
     // Options: 'PLAYING', 'WATCHING', 'COMPETING'
 });
