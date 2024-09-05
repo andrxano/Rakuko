@@ -14,7 +14,7 @@ module.exports = {
             opponent: opponent,
             embed: {
                 title: 'Rock Paper Scissors',
-                color: '#5865F2',
+                color: '#f7931e',
                 description: 'Press a button below to make a choice.'
             },
             buttons: {
