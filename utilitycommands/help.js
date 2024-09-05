@@ -55,7 +55,7 @@ module.exports = {
                     embeds: [
                         new EmbedBuilder()
                             .setTitle('Music Commands')
-                            .setDescription('Here are the music commands:\n- `!play`\n- `!skip`\n- `!stop`\n- `!queue`\n- `!loop`\n- `!pause`\n- `!resume`\n- `!remove`\n- `!shuffle`\n- `!seek`\n- `!nowplaying`')
+                            .setDescription('Here are the music commands:\n- `!play`\n- `!skip`\n- `!stop`\n- `!queue`\n- `!loop`\n- `!pause`\n- `!resume`\n- `!remove`\n- `!shuffle`\n- `!seek`\n- `!clear`')
                             .setColor('#5865F2')
                     ],
                     components: [row]
