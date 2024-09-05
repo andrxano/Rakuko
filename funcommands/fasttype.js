@@ -80,7 +80,7 @@ module.exports = {
             isSlashGame: false,
             embed: {
                 title: 'Fast Type',
-                color: '#5865F2',
+                color: '#f7931e',
                 description: 'You have {time} seconds to type the sentence below.'
             },
             timeoutTime: 60000,
