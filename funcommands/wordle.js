@@ -13,8 +13,8 @@ module.exports = {
             },
             customWord: null, // You can customize the word here or let it choose randomly
             timeoutTime: 60000, // Timeout for the game
-            winMessage: 'You won! The word was **{word}**.',
-            loseMessage: 'You lost! The word was **{word}**.',
+            winMessage: ':tada: You won! The word was **{word}**.',
+            loseMessage: ':stuck_out_tongue_closed_eyes: You lost! The word was **{word}**.',
             playerOnlyMessage: 'Only {player} can use these buttons.'
         });
 
