@@ -44,7 +44,7 @@ function loadCommandsFromFolders(client, folders) {
         });
     });
 }
-const commandFolders = ['./musiccommands', './utilitycommands', './funcommands'];
+const commandFolders = ['./musiccommands', './utilitycommands', './funcommands', './imagecommands'];
 loadCommandsFromFolders(client, commandFolders);
 
 client.once("ready", () => {
