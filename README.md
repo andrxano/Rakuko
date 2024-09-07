@@ -10,7 +10,7 @@
 <ul>
   <li>Music commands with <a href="https://github.com/riffy-team/riffy">Riffy</a> and <a href="https://github.com/unburn/musicard">Musicard</a> integrated</li>
   <li>Utility commands</li>
-  <li>Fun commands using [Gamecord](https://github.com/aniket091/Gamecord)!</li>
+  <li>Fun commands using <a href="https://github.com/aniket091/Gamecord">Gamecord</a></li>
   <ul>
     <li>Fast Type</li>
     <li>Wordle</li>
