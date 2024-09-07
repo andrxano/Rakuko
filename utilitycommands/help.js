@@ -45,7 +45,7 @@ module.exports = {
                     embeds: [
                         new EmbedBuilder()
                             .setTitle('General Commands')
-                            .setDescription('Here are the general commands:\n- `!ping`\n- `!avatar`\n- `!help`\n- `!emoji`\n- `!listemojis`')
+                            .setDescription('Here are the general commands:\n- `-ping`\n- `-avatar`\n- `-help`\n- `-emoji`\n- `-listemojis`\n- `-say`\n- `-owner`\n- `-stealemoji`')
                             .setColor('#f7931e')
                     ],
                     components: [row]
@@ -55,7 +55,7 @@ module.exports = {
                     embeds: [
                         new EmbedBuilder()
                             .setTitle('Music Commands')
-                            .setDescription('Here are the music commands:\n- `!play`\n- `!skip`\n- `!stop`\n- `!queue`\n- `!loop`\n- `!pause`\n- `!resume`\n- `!remove`\n- `!shuffle`\n- `!seek`\n- `!clear`')
+                            .setDescription('Here are the music commands:\n- `-play`\n- `-skip`\n- `-stop`\n- `-queue`\n- `-loop`\n- `-pause`\n- `-resume`\n- `-remove`\n- `-shuffle`\n- `-seek`\n- `-clear`')
                             .setColor('#5865F2')
                     ],
                     components: [row]
@@ -65,7 +65,7 @@ module.exports = {
                     embeds: [
                         new EmbedBuilder()
                             .setTitle('Fun Commands')
-                            .setDescription('Here are the fun commands:\n- `!fasttype`\n- `!wordle`\n- `!rps`')
+                            .setDescription('Here are the fun commands:\n- `-fasttype`\n- `-wordle`\n- `-rps`\n- `-vtuberguess`\n- `-animeguess`\n- `-characterguess`')
                             .setColor('#ffe100')
                     ],
                     components: [row]
