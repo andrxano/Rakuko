@@ -1,4 +1,14 @@
 {
+  "name": "rakuko",
+  "description": "An advanced music bot for discord using riffy and musicard.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrxano",
+  "license": "MIT",
   "dependencies": {
     "@discordjs/builders": "^1.9.0",
     "@discordjs/rest": "^2.4.0",
