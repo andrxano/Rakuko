@@ -9,13 +9,21 @@ module.exports = {
 
         // Check if a user ID or mention is provided
         if (args[0]) {
-            try {
-                user = await client.users.fetch(args[0]);
-            } catch (error) {
-                return message.reply("Couldn't find a user with that ID.");
+            // Check if the input is a mention
+            const mention = message.mentions.users.first();
+            
+            if (mention) {
+                user = mention;  // If it's a mention, use the mentioned user
+            } else {
+                try {
+                    user = await client.users.fetch(args[0]);  // If not a mention, assume it's a user ID
+                } catch (error) {
+                    return message.reply("Couldn't find a user with that ID.");
+                }
             }
         } else {
-            user = message.mentions.users.first() || message.author;
+            // If no args provided, use the message author (self)
+            user = message.author;
         }
 
         // Create an embed with the user's avatar
