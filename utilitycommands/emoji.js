@@ -28,6 +28,6 @@ module.exports = {
         }
         
         // Send the emoji to the same channel
-        message.channel.send(emoji);
+        message.reply(emoji);
     },
 };
