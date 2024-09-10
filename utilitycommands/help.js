@@ -45,7 +45,7 @@ module.exports = {
                     embeds: [
                         new EmbedBuilder()
                             .setTitle('General Commands')
-                            .setDescription('Here are the general commands:\n- `-ping`\n- `-avatar`\n- `-help`\n- `-emoji`\n- `-listemojis`\n- `-say`\n- `-owner`\n- `-stealemoji`')
+                            .setDescription('Here are the general commands:\n- `-ping`\n- `-avatar`\n- `-help`\n- `-owner`\n- `-say`\n- `-emoji`\n- `-stealemoji`\n- `-listemojis`')
                             .setColor('#f7931e')
                     ],
                     components: [row]
@@ -65,7 +65,7 @@ module.exports = {
                     embeds: [
                         new EmbedBuilder()
                             .setTitle('Fun Commands')
-                            .setDescription('Here are the fun commands:\n- `-fasttype`\n- `-wordle`\n- `-rps`\n- `-vtuberguess`\n- `-animeguess`\n- `-characterguess`')
+                            .setDescription('Here are the fun commands:\n- `-fasttype`\n- `-wordle`\n- `-rps`\n- `-trivia easy|medium|hard`\n- `-vtuberguess`\n- `-animeguess`\n- `-characterguess`')
                             .setColor('#ffe100')
                     ],
                     components: [row]
