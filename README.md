@@ -15,7 +15,6 @@
     <li>Fast Type</li>
     <li>Wordle</li>
     <li>Rock-Paper-Scissors</li>
-    <li>Trivia</li>
   </ul>
 </ul>
 
