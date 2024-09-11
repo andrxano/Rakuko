@@ -65,7 +65,7 @@ module.exports = {
                     embeds: [
                         new EmbedBuilder()
                             .setTitle('Fun Commands')
-                            .setDescription('Here are the fun commands:\n- `-fasttype`\n- `-wordle`\n- `-rps`\n- `-trivia easy|medium|hard`')
+                            .setDescription('Here are the fun commands:\n- `-fasttype`\n- `-wordle`\n- `-rps`')
                             .setColor('#ffe100')
                     ],
                     components: [row]
